@@ -8,6 +8,7 @@
 --black: #000;
 --ff-open-sans: 'Open Sans', sans-serif;
 --ff-maven-pro: 'Maven Pro', sans-serif;
+--transition-3s: all .3s ease-in-out;
 }
 
 *, *::before, *::after {
@@ -38,6 +39,10 @@ ul, ol {
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
 }
 
 .container {
@@ -72,8 +77,23 @@ a {
 .btn-white:hover {
   background-color: var(--white);
   color: var(--pri-green);
+  transition: var(--transition-3s);
 }
 
+.btn-link {
+  color: var(--white);
+  width: max-content;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+  border-bottom: 2px solid var(--white);
+  transition: var(--transition-3s);
+}
+
+.btn-link:hover {
+  letter-spacing: 2px;
+}
 
 /* 
   HEADER 
@@ -132,4 +152,55 @@ a {
   background-image: url(img/hero-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+/*
+  características 
+*/
+.caract {
+  flex-direction: column;
+}
+
+.caract__img img {
+  object-fit: cover;
+  height: 400px;
+  object-position: 13.58% 100%;
+}
+
+.caract__cards {
+  margin-top: -160px;
+  display: grid;
+  gap: 1.25em;
+}
+
+.card {
+  background: var(--pri-orange);
+  color: var(--white);
+  text-align: center;
+  padding-block: 1.875em;
+  padding-inline: 1.25em;
+  display: grid;
+  gap: 1.25em;
+  place-items: center;
+}
+
+.card.green {
+  background-color: var(--pri-green);
+}
+
+.card h2 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 900;
+  font-family: var(--ff-maven-pro);
+}
+
+.card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card p {
+  line-height: 2;
 }
