@@ -148,10 +148,13 @@ h1, h2, h3, h4 {
 }
 
 .hero__img {
-  min-height: 400px;
-  background-image: url(img/hero-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  
+}
+
+.hero__img img {
+  height: 400px;
+  object-fit: cover;
+  object-position: 0% 50%;
 }
 
 
@@ -163,8 +166,8 @@ h1, h2, h3, h4 {
 }
 
 .caract__img img {
-  object-fit: cover;
   height: 400px;
+  object-fit: cover;
   object-position: 13.58% 100%;
 }
 
