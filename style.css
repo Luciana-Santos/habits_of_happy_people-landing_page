@@ -19,6 +19,7 @@
 body {
   min-height: 100vh;
   line-height: 1.5;
+  font-family: var(--ff-open-sans);
 }
 
 img {
@@ -44,6 +45,9 @@ a {
   margin-inline: auto;
 }
 
+/* 
+  UTIL CLASSES
+*/
 .flex {
   display: flex;
 }
@@ -52,6 +56,28 @@ a {
   display: grid;
 }
 
+.btn {
+  background-color: var(--pri-orange);
+  color: var(--white);
+  width: max-content;
+  padding-block: 1.25em;
+  padding-inline: 2.25em;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+}
+
+.btn-white:hover {
+  background-color: var(--white);
+  color: var(--pri-green);
+}
+
+
+/* 
+  HEADER 
+*/
 .header {
   padding-block: 0.625em;
 }
@@ -71,4 +97,39 @@ a {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+
+/* 
+  HERO
+*/
+.hero {
+  background-color: var(--pri-green);
+  color: var(--white);
+}
+
+.hero__info {
+  gap: 1.875em;
+  padding-top: 5em;
+  padding-bottom: 2.25em;
+}
+
+.hero__info h1 {
+  font-size: 3rem;
+  font-family: var(--ff-maven-pro);
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.hero__info p {
+  line-height: 1.6;
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.hero__img {
+  min-height: 400px;
+  background-image: url(img/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
