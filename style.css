@@ -1,3 +1,15 @@
+:root {
+--pri-green: hsl(97, 29%, 42%);
+--pri-orange: hsl(38, 96%, 51%);
+--light-gray: hsl(0, 0%, 95%);
+--med-gray: hsl(0, 0%, 50%);
+--dark-gray: hsl(0, 0%, 7%);
+--white: #fff;
+--black: #000;
+--ff-open-sans: 'Open Sans', sans-serif;
+--ff-maven-pro: 'Maven Pro', sans-serif;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -23,7 +35,40 @@ ul, ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: min(90%, 75em);
-  margin-inline: 2em;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.header {
+  padding-block: 0.625em;
+}
+
+.header .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: var(--pri-green);
+  font-size: 1.5em;
+}
+
+.menu-icon {  
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
